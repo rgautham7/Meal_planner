@@ -24,7 +24,7 @@ export function Newsletter() {
             </p>
             <MovingBorderButton
               borderRadius="0.5rem"
-              className="text-sm font-bold h-12 w-40 bg-white dark:bg-gray-700 text-black dark:text-white border-neutral-200 dark:border-gray-600"
+              className="text-xl font-bold h-12 w-40 bg-white dark:bg-gray-700 text-black dark:text-white border-neutral-200 dark:border-gray-600"
             >
               Subscribe
             </MovingBorderButton>

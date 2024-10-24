@@ -33,6 +33,7 @@ export function MovingBorderButton({
     <Component
       className={cn(
         "bg-transparent relative text-xl p-[1px] overflow-hidden ",
+        "dark:bg-slate-900/[0.8]", // Dark mode background color
         containerClassName
       )}
       style={{
@@ -56,7 +57,9 @@ export function MovingBorderButton({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400", // Light mode gradient background
+          "dark:bg-transparent", // Remove gradient in dark mode
           className
         )}
         style={{
