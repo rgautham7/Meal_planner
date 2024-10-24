@@ -22,9 +22,9 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/mealcraft.git
-   cd mealcraft
+```bash
+git clone https://github.com/yourusername/mealcraft.git
+cd mealcraft
 ```
 
 2. Install the dependencies:
