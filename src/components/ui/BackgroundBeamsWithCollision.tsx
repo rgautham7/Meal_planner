@@ -4,13 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import React, { useRef, useState, useEffect } from "react";
 import { HomePageText } from "@/components/HomePageText";
 
-export const BackgroundBeamsWithCollision = ({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
+interface BackgroundBeamsProps {
   className?: string;
-}) => {
+}
+
+export const BackgroundBeamsWithCollision = ({ className }: BackgroundBeamsProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const parentRef = useRef<HTMLDivElement>(null);
 
@@ -84,7 +82,6 @@ export const BackgroundBeamsWithCollision = ({
         />
       ))}
       <HomePageText />
-      {children}
       <div
         ref={containerRef}
         className="absolute bottom-0 bg-neutral-100 w-full inset-x-0 pointer-events-none"

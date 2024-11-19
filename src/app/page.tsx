@@ -14,7 +14,7 @@ export default function Home() {
       <div className="absolute top-4 right-8 z-10">
         <NavBar />
       </div>
-      <BackgroundBeamsWithCollision children={undefined} />
+      <BackgroundBeamsWithCollision />
       <AboutPage />
       <DisplayPage />
       <TestimonialSection />
