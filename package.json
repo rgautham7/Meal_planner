@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run type-check && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
