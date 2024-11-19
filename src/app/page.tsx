@@ -1,3 +1,5 @@
+'use client'
+
 import { NavBar } from "@/components/NavBar";
 import { AboutPage } from "@/components/AboutPage";
 import { DisplayPage } from "@/components/DisplayPage";
