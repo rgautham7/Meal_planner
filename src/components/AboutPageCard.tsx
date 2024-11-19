@@ -8,15 +8,15 @@ interface AboutPageCardProps {
 
 export function AboutPageCard({ children }: AboutPageCardProps) {
   return (
-    <div>
-            <div className="w-full h-full relative rounded-3xl overflow-hidden max-w-md mx-auto bg-gradient-to-r from-[#1D2235] to-[#121318] p-8 my-10">
-            <Beams />
-            <div className="relative z-10 flex items-center justify-center h-full">
-                <motion.div className="relative z-20 text-center">
-                {children}
-                </motion.div>
-            </div>
+    <div className="w-full px-4 md:px-0">
+      <div className="w-full h-full relative rounded-2xl md:rounded-3xl overflow-hidden max-w-sm mx-auto bg-gradient-to-r from-[#1D2235] to-[#121318] p-4 md:p-8 my-4 md:my-10">
+        <Beams />
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <motion.div className="relative z-20 text-center">
+            {children}
+          </motion.div>
         </div>
+      </div>
     </div>
   );
 }

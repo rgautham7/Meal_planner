@@ -21,7 +21,7 @@ export const NavBar = () => {
   const toggleProfileMenu = () => setShowProfileMenu(!showProfileMenu);
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-18 shadow-md z-10">
+    <nav className="fixed top-0 left-0 w-full bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and text */}
@@ -32,7 +32,7 @@ export const NavBar = () => {
 
           {/* Navigation items */}
           <div className="flex-grow flex justify-center">
-            <div className="flex items-baseline space-x-8">
+            <div className="flex items-baseline space-x-8 sm:space-x-2">
               {['Home', 'About', 'Testimonials'].map((item) => (
                 <a
                   key={item}

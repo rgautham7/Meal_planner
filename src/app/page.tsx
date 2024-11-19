@@ -10,16 +10,24 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
-      <div className="absolute top-4 right-8 z-10">
-        <NavBar />
+    <div className="relative min-h-screen w-full overflow-x-hidden">
+      <NavBar />
+      <div className="pt-4">
+        <BackgroundBeamsWithCollision />
+        <section id="about">
+          <AboutPage />
+        </section>
+        <section id="mealplans">
+          <DisplayPage />
+        </section>
+        <section id="testimonials">
+          <TestimonialSection />
+        </section>
+        <section id="contact">
+          <Newsletter />
+        </section>
+        <Footer />
       </div>
-      <BackgroundBeamsWithCollision />
-      <AboutPage />
-      <DisplayPage />
-      <TestimonialSection />
-      <Newsletter />
-      <Footer />
     </div>
   );
 }

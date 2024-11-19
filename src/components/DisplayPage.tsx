@@ -38,13 +38,15 @@ export function DisplayPage() {
       ];
 
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center py-20">
+    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center py-12 md:py-20 px-4 md:px-6">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="relative z-10 w-full">
-        <h1 className="text-4xl md:text-6xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 dark:from-neutral-50 dark:to-neutral-400">
-          Diets plans according to your needs
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-center mb-8 md:mb-12 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 dark:from-neutral-50 dark:to-neutral-400">
+          Diet plans according to your needs
         </h1>
-        <FocusCards cards={cards} />
+        <div className="max-w-7xl mx-auto">
+          <FocusCards cards={cards} />
+        </div>
       </div>
     </div>
   );
